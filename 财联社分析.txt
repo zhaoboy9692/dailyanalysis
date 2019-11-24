@@ -1,0 +1,5 @@
+app=cailianpress&channel=8&cuid=Unkown&latitude=&loc_type=&longitude=&mb=HUAWEI-BLN-AL10&motif=0&net=&os=android&ov=23&province_code=4403&sv=7.2.7&time=1574170609&token=&uid=
+应该是先进行了排序以上进行sha1，然后md5(sha1后的结果)
+sha1 = 6efdff4f4cc95ae897ebbb467a70d2c3a16b2961
+md5 = 4f4eb26d22214c1fbf6f97687f54b505
+财联社7.2.7
