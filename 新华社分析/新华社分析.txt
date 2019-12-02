@@ -1,0 +1,3 @@
+3DES加密模式：
+	ECB  填充 pkcs5padding
+	秘钥fad6dd67a2422fd699edc0de85c72d4f
