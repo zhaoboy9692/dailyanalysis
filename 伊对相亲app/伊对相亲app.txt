@@ -1,0 +1,7 @@
+version 6.7.2
+登录发送验证码sign
+def get_sign(phone):
+    time_stamp = str(int(time.time()))
+    sort_num = sorted([i for i in str(phone) + time_stamp])
+    md = hashlib.md5(str(''.join(sort_num)).encode('utf8'))
+    return time_stamp, md.hexdigest()
