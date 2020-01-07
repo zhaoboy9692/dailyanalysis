@@ -1,0 +1,5 @@
+md5(表单数据去掉& 排序 然后加上EQ1OhXQsrbelQ6blcSU86KBURLZnowX1)
+案例
+appVersion=1.0.2clientId=shock-androidguid=74:51:ba:a7:9c:d4month=2nonce=195491osType=2pageNo=0pageSize=10000timestamp=1578390078version=1year=2020EQ1OhXQsrbelQ6blcSU86KBURLZnowX1
+curl
+curl -H 'User-Agent: Dalvik/2.1.0 (Linux; U; Android 6.0.1; MI 4LTE MIUI/8.9.13)' -H 'Host: api.shockx.cn' --data "month=2&pageNo=0&year=2020&version=1&pageSize=10000&timestamp=1578390078&nonce=195491&guid=74%3A51%3Aba%3Aa7%3A9c%3Ad4&osType=2&clientId=shock-android&appVersion=1.0.2&sign=e71164f4a9d6555b082b2853a9429279" --compressed 'https://api.shockx.cn/shop/getSellCalendar'
