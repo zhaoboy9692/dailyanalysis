@@ -1,0 +1,4 @@
+def get_sign(account, token, timestamp):
+    md = hashlib.md5() 
+    md.update(f'3F6BC9D407FCBB4C14BB5E82C0EABAB3{account}{token}{timestamp}'.encode('utf-8'))  # 制定需要加密的字符串
+    return str(md.hexdigest()).upper()
