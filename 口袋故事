@@ -1,0 +1,26 @@
+data = {
+        "caller": "3003",
+        "device_id": "131290e1",
+        "format": "json",
+        "market_channel_id": "myapp",
+        "method": "member.mobileQuickLogin",
+        "mobile": "16730470219",
+        "mobile_area": "86",
+        "mode": "MI 4LTE",
+        "olap_user_id": "",
+        "prd_ver": "10.18.0107020",
+        "timestamp": "1583043781497",
+        "token": "3ce6e49-ebbc-aabc-4f70-5e5b1b22e60b77",
+        "trace_id": "1583043781534",
+        "user_id": "35640762",
+        "ver": "1.2",
+        "verify_code": "531225"
+    }
+def get_sign():
+    str = ''
+    for key in sorted(data.keys()):
+        str += key + '=' + data[key]
+    str += 'xqg4co4vogwcockogoskckqg4sg4c8gw'
+    hl = hashlib.md5()
+    hl.update(str.encode(encoding='utf-8'))
+    return hl.hexdigest()
